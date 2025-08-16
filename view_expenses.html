@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if expenses %}
+<h2>Your Expenses</h2>
+<a href="{{url_for('add_expense')}}" class="btn btn-success mb-3">Add Expense</a>
+
+<br>
+<table class="table table-info table-striped-columns">
+    <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Description</th>
+        <th>  </th>
+        <th>  </th>
+    </tr>
+
+    {% for e in expenses %}
+    <tr>
+        <td>{{e.date}}</td>
+        <td>{{e.category}}</td>
+        <td>{{e.amount}}</td>
+        <td>{{e.description}}</td>
+        <td><a href="{{ url_for('edit', id=e.id) }}" class="btn btn-warning btn-sm">Edit</a></td>
+        <td><a href="{{ url_for('delete', id=e.id) }}" class="btn btn-danger btn-sm">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+
+{% endblock %}

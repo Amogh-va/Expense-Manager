@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content%}
+    <h2>Welcome {{user}} !!!</h2>
+    <p>Your total expenses is {{total}}</p>
+
+    <a href="{{url_for('add_expense')}}" class="btn btn-success mb-3">Add Expense</a>
+    <a href="{{url_for('view_expenses')}}" class="btn btn-warning mb-3">View Expense</a>
+
+    <a href="{{url_for('logout')}}" class="btn btn-danger mb-3">Logout</a>
+
+{% endblock %}
