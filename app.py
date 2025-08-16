@@ -211,11 +211,3 @@ def delete(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-'''
-    (
-        (5, 1, datetime.date(2025, 8, 2), 'Rent', Decimal('10000.00'), 'Rent for this month'), 
-        (6, 1, datetime.date(2025, 8, 3), 'vacation', Decimal('10000.00'), 'vacation to bali')
-    )
-    '''
