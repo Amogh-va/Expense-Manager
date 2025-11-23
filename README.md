@@ -7,4 +7,4 @@ You can add as many expenses as you like and it is safe from other people.
 
 You can also access it on your web-browser at: https://amoghvarunprasad.pythonanywhere.com/. 
 
-Created with Python 3.13 and HTMl using FLASK module
+Created with Python 3.13 and HTML using FLASK module
