@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from db import get_db_connection
 
 app = Flask(__name__)
-app.secret_key = 'Just a secret'
+app.secret_key = REDACTED
 
 @app.route('/')
 def home():
@@ -211,3 +211,4 @@ def delete(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
